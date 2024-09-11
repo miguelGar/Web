@@ -1,4 +1,4 @@
-# Project Name
+# Inventory
 
 > Angular aplication for inventory, need to connecto to Back-End to full response.
 
