@@ -62,6 +62,7 @@ Example:
 - **GET:** productos: Get products.
 - **GET:** productos/{id}: Get product by Id.
 - **POST:** productos: Add product.
+   - Request body (JSON):
   ```bash
   {
         "descripcion": "Camisa",
@@ -69,8 +70,9 @@ Example:
         "existencia": 13
   }
 - **PUT:** productos/{id}: Update product by Id.
-- ```bash
-  {
+   - Request body (JSON):
+    ```bash
+   {
         "descripcion": "Tirantes",
         "precio": 150.0,
         "existencia": 13
