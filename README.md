@@ -41,11 +41,13 @@ Follow these steps to set up the project on your local machine:
    git clone https://github.com/miguelGar/Web/Angular/inventario-angular
 
 2. **Install dependencies**:
-   Install dependencies:
+   
+    ```bash
    npm install
-3. Run the development server:
+4. Run the development server:
+    ```bash
    ng serve -o
-4. Access the app:
+6. Access the app:
    ```bash
    Open your browser and go to http://localhost:4200.
 
