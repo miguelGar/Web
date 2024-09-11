@@ -1,27 +1,18 @@
 # Project Name
 
-> Brief description of your project (e.g., an e-commerce app built with Angular).
+> Angular aplication for inventory, need to connecto to Back-End to full response.
 
 ## Table of Contents
 
 - [Overview](#overview)
 - [Technologies](#technologies)
 - [Setup and Installation](#setup-and-installation)
-- [Project Structure](#project-structure)
-- [Features](#features)
-- [Usage](#usage)
-- [API Endpoints](#api-endpoints) *(if applicable)*
-- [Screenshots](#screenshots)
-- [Testing](#testing)
-- [Contributing](#contributing)
-- [License](#license)
+- [API Endpoints](#api-endpoints) 
 - [Contact](#contact)
 
 ---
 
 ## Overview
-
-Provide a detailed explanation of what the project does, its purpose, and why it was created.
 
 - **Version**: `1.0.0`
 - **Author**: Miguel García Pérez
@@ -55,21 +46,25 @@ Follow these steps to set up the project on your local machine:
 3. Run the development server:
    ng serve -o
 4. Access the app:
+   ```bash
    Open your browser and go to http://localhost:4200.
 
-API Endpoints
+## API Endpoints
+
+ 
 http://localhost:8085/inventario-app/
 
 Example:
-GET /productos: Get products.
-GET /productos/{id}: Get product by Id.
-POST /productos: Add product.
-PUT /productos/{id}: Update product by Id.
-DELETE productos/{id} : Delete product by Id.
+- **GET:** productos: Get products.
+- **GET:** productos/{id}: Get product by Id.
+- **POST:** productos: Add product.
+- **PUT:** productos/{id}: Update product by Id.
+- **DELETE:** productos/{id} : Delete product by Id.
 
-Contact
+## Contact
+
 For any questions, feel free to reach out:
 
-Email: miguelgarciarob@gmail.com
-GitHub: https://github.com/miguelGar
-LinkedIn: Miguel Garcia
+- **Email:** miguelgarciarob@gmail.com
+- **GitHub:** https://github.com/miguelGar
+- **LinkedIn:** Miguel Garcia
