@@ -62,7 +62,19 @@ Example:
 - **GET:** productos: Get products.
 - **GET:** productos/{id}: Get product by Id.
 - **POST:** productos: Add product.
+  ```bash
+  {
+        "descripcion": "Camisa",
+        "precio": 300.0,
+        "existencia": 13
+  }
 - **PUT:** productos/{id}: Update product by Id.
+- ```bash
+  {
+        "descripcion": "Tirantes",
+        "precio": 150.0,
+        "existencia": 13
+  }
 - **DELETE:** productos/{id} : Delete product by Id.
 
 ## Contact
