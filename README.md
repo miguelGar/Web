@@ -48,8 +48,10 @@ Follow these steps to set up the project on your local machine:
     ```bash
    ng serve -o
 6. Access the app:
+   
+   Open your browser and go to
    ```bash
-   Open your browser and go to http://localhost:4200.
+   http://localhost:4200.
 
 ## API Endpoints
 
