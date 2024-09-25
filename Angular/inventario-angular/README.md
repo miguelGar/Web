@@ -1,27 +1,88 @@
-# MiAppAngular
+# Inventory
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.2.
+> Angular aplication for inventory, need to connecto to Back-End to full response.
 
-## Development server
+## Table of Contents
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- [Overview](#overview)
+- [Technologies](#technologies)
+- [Setup and Installation](#setup-and-installation)
+- [API Endpoints](#api-endpoints) 
+- [Contact](#contact)
 
-## Code scaffolding
+---
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Overview
 
-## Build
+- **Version**: `1.0.0`
+- **Author**: Miguel García Pérez
+- **Date Created**: 10/09/2024
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+---
 
-## Running unit tests
+## Technologies
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+This project was built using the following technologies:
 
-## Running end-to-end tests
+- **Angular**: Version (18.2.2)
+- **Node.js**: Version (20.17.0)
+- **NPM**: Version (10.8.2)
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-## Further help
+---
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## Setup and Installation
+
+Follow these steps to set up the project on your local machine:
+
+1. **Clone the repository**:
+
+   ```bash
+   git clone https://github.com/miguelGar/Web/Angular/inventario-angular
+
+2. **Install dependencies**:
+   
+    ```bash
+   npm install
+4. Run the development server:
+    ```bash
+   ng serve -o
+6. Access the app:
+   
+   Open your browser and go to
+   ```bash
+   http://localhost:4200.
+
+## API Endpoints
+
+ 
+http://localhost:8085/inventario-app/
+
+Example:
+- **GET:** productos: Get products.
+- **GET:** productos/{id}: Get product by Id.
+- **POST:** productos: Add product.
+   - Request body (JSON):
+  ```bash
+  {
+        "descripcion": "Camisa",
+        "precio": 300.0,
+        "existencia": 13
+  }
+- **PUT:** productos/{id}: Update product by Id.
+   - Request body (JSON):
+    ```bash
+   {
+        "descripcion": "Tirantes",
+        "precio": 150.0,
+        "existencia": 13
+  }
+- **DELETE:** productos/{id} : Delete product by Id.
+
+## Contact
+
+For any questions, feel free to reach out:
+
+- **Email:** miguelgarciarob@gmail.com
+- **GitHub:** https://github.com/miguelGar
+- **LinkedIn:** Miguel Garcia

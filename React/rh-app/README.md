@@ -1,6 +1,6 @@
-# Inventory
+# App Recursos humanos
 
-> Angular aplication for inventory, need to connecto to Back-End to full response.
+> React aplication, need to connecto to Back-End to full response.
 
 ## Table of Contents
 
@@ -16,7 +16,7 @@
 
 - **Version**: `1.0.0`
 - **Author**: Miguel García Pérez
-- **Date Created**: 10/09/2024
+- **Date Created**: 25/09/2024
 
 ---
 
@@ -24,7 +24,7 @@
 
 This project was built using the following technologies:
 
-- **Angular**: Version (18.2.2)
+- **React**: Version (18.3.1)
 - **Node.js**: Version (20.17.0)
 - **NPM**: Version (10.8.2)
 
@@ -38,7 +38,7 @@ Follow these steps to set up the project on your local machine:
 1. **Clone the repository**:
 
    ```bash
-   git clone https://github.com/miguelGar/Web/Angular/inventario-angular
+   git clone https://github.com/miguelGar/Web/React/rh-app
 
 2. **Install dependencies**:
    
@@ -46,38 +46,42 @@ Follow these steps to set up the project on your local machine:
    npm install
 4. Run the development server:
     ```bash
-   ng serve -o
+   npm start
 6. Access the app:
    
    Open your browser and go to
    ```bash
-   http://localhost:4200.
+   http://localhost:3000.
+
+Note: create app:
+
+   - **npx create-react-app .**
 
 ## API Endpoints
 
  
-http://localhost:8085/inventario-app/
+http://localhost:8080/rhApp
 
 Example:
-- **GET:** productos: Get products.
-- **GET:** productos/{id}: Get product by Id.
-- **POST:** productos: Add product.
+- **GET:** /empleados: Get products.
+- **GET:** /empleados/{id}: Get product by Id.
+- **POST:** /empleados: Add product.
    - Request body (JSON):
   ```bash
   {
-        "descripcion": "Camisa",
-        "precio": 300.0,
-        "existencia": 13
+        "nombre": "Carlitos",
+        "departamento": "finanzas",
+        "sueldo": 1000.0
   }
-- **PUT:** productos/{id}: Update product by Id.
+- **PUT:** /empleados/{id}: Update product by Id.
    - Request body (JSON):
     ```bash
    {
-        "descripcion": "Tirantes",
-        "precio": 150.0,
-        "existencia": 13
+        "nombre": "Carlitos Juan",
+        "departamento": "finanzas",
+        "sueldo": 1200.0
   }
-- **DELETE:** productos/{id} : Delete product by Id.
+- **DELETE:** /empleados/{id} : Delete product by Id.
 
 ## Contact
 
