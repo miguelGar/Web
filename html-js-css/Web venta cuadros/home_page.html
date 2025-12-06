@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi arte</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    
+   
+</head>
+<body>
+
+    <header class="header">
+        <div class="header_logo">
+            <span class="title"> MgArt_3579</span>
+        </div>
+
+    <!-- Hamburger button (hidden on desktop) -->
+    <button class="hamburger" aria-label="Toggle menu" id="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+        
+    <div class="filters" id="filters-menu">
+        <button class="filter-btn filter-btn--active" data-cat="all">Todos</button>
+        <button class="filter-btn" data-cat="oleo">Oleo</button>
+        <button class="filter-btn" data-cat="acuarela">Acuarela</button>
+        <button class="filter-btn" data-cat="mix">Mix</button>
+        <button class="filter-btn" data-cat="figura">Figuras</button>
+    </div>
+        <div class="header_actions">
+            <!-- Icono Fav -->
+            <button class="action-btn" id="btn-favs">
+                <i class="fas fa-heart"></i>
+                <span class="badge hidden" id="badge-fav">0</span>
+            </button>
+            <!-- Icono Carrito -->
+            <button class="action-btn" id="btn-cart">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="badge hidden" id="badge-cart">0</span>
+            </button>
+
+        </div>
+
+    </header>
+
+    <h1 class="filter-title">Catálogo de Arte</h1>
+
+     <!-- ÁREA PRINCIPAL -->
+    <main>
+        <!-- Loader (Async demo) -->
+        <div id="loader" class="catalog_art">
+            <div class="loader"><i class="fas fa-spinner fa-spin"></i> Cargando productos...</div>
+        </div>
+
+        <!-- Catálogo Dinámico -->
+        <div id="catalog_art" class="catalog_art hidden">
+            <!-- JS inyectará aquí los products -->
+        </div>
+    </main>
+
+ <!-- CARRITO SIDEBAR -->
+    <aside class="cart-modal" id="cart-modal">
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+            <h2>Tu Pedido</h2>
+            <button onclick="toggleCart()" style="background:none; border:none; font-size: 1.5rem; cursor:pointer;">&times;</button>
+        </div>
+        <div class="cart-items" id="cart-items-container">
+            <p style="color: #888; text-align: center; margin-top: 50px;">El carrito está vacío</p>
+        </div>
+        <div class="cart-total">
+            Total: <span id="cart-total-price">$0.00</span>
+        </div>
+        <button class="product__btn" id="btn-checkout">Finalizar Compra</button>
+    </aside>
+
+    <!-- TOAST -->
+    <div id="toast" class="toast">Mensaje de notificación</div>
+
+    <!-- 
+       <div class="catalogo_Arte">
+       <article class="product">
+        <img src="https://imagenes.hobbyconsolas.com/files/image_1280_720/uploads/imagenes/2023/04/25/69028988a2228.jpeg"
+             class="product_img">
+        <div  class="product_contenido">
+            <h4 class="product_titulo">Nombre_cuadro</h4>
+            <h3 class="product_precio">$0.00</h3>
+            <span class="product_descripcion">DESCRIPCIO</span>
+            <p class="product_descripcion_add">MEDIDAS 10 X 10 CM (1.5 X 2.0)</p>
+            <button class="product_btn--primario product_btn">
+                Añadir al carrito
+            </button>
+            <button class="product_btn--secundario product_btn">
+                Comprar ahora
+            </button>
+        </div>
+    </article> 
+    </div>
+    -->
+    
+
+
+
+</body>
+
+<div id="product_modal" class="modal hidden">
+    <div class="modal_overlay" onclick="closeProductModal()"></div>
+    <div class="modal_content">
+        <button class="modal_close" onclick="closeProductModal()">&times;</button>
+        <div id="modal_product_data"></div>
+    </div>
+
+</div>
+<script src="js/catalog.js"></script>
+</html>
