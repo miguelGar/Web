@@ -1,28 +1,25 @@
 const rawData = [
-    { id: 1, name: "Azteca", price: 50,  description: "Cuadro oleo pintura original", category: "oleo", img: "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=400" },
-    { id: 2, name: "Espresso Intenso", price: 14.00,  description: "Cuadro oleo pintura original", category: "oleo", img: "https://images.unsplash.com/photo-1497935586351-b67a49e012bf?w=400" },
-    // CAMBIO: Nueva URL para Prensa Francesa
-    { id: 3, name: "Prensa Francesa", price: 25.00, description: "Cuadro oleo pintura original", category: "acuarela", img: "https://images.unsplash.com/photo-1544787219-7f47ccb76574?w=400" },
-    { id: 4, name: "Tarta de Zanahoria", price: 4.50, description: "Cuadro oleo pintura original", category: "mix", img: "https://images.unsplash.com/photo-1621303837174-89787a7d4729?w=400" },
-    { id: 5, name: "Ethiopia Yirgacheffe", price: 18.00, description: "Cuadro oleo pintura original", category: "figura", img: "https://images.unsplash.com/photo-1559496417-e7f25cb247f3?w=400" },
-    { id: 6, name: "Taza de Café con Arte Latte", price: 32.00, description: "Cuadro oleo pintura original", category: "oleo", img: "https://images.unsplash.com/photo-1559496417-e7f25cb247f3?w=400" },
-    { id: 7, name: "Taza de Café con Arte Latte", price: 32.00, description: "Cuadro oleo pintura original", category: "oleo", img: "https://images.unsplash.com/photo-1559496417-e7f25cb247f3?w=400" },
-    { id: 8, name: "Taza de Café con Arte Latte", price: 32.00, description: "Cuadro oleo pintura original", category: "oleo", img: "https://images.unsplash.com/photo-1559496417-e7f25cb247f3?w=400" },
-    { id: 9, name: "Taza de Café con Arte Latte", price: 32.00, description: "Cuadro oleo pintura original", category: "oleo", img: "https://images.unsplash.com/photo-1559496417-e7f25cb247f3?w=400" },
-    { id: 10, name: "Taza de Café con Arte Latte", price: 32.00, description: "Cuadro oleo pintura original", category: "oleo", img: "https://images.unsplash.com/photo-1559496417-e7f25cb247f3?w=400" }
+    { id: 1, name: "Astronauta", price: 50.00, description: "Cuadro de Astronauta navegando entre espacio tiempo.", category: "oleo", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTY72BfRusnrFGPgbh15VORPudZbH_w0Z3rng&s" },
+    { id: 2, name: "Piramide Azteca", price: 100.00, description: "Cuadro oleo pintura original de piramide Azteca.", category: "oleo", img: "https://http2.mlstatic.com/D_NQ_NP_936097-MLM52878678242_122022-O.webp" },
+    { id: 3, name: "Luchadores", price: 30.00, description: "El Santo contra Blue Demon.", category: "acuarela", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQETHCeweIT6OvTxdSMloLRycbfDh-NkCrUeA&s" },
+    { id: 4, name: "Paisaje", price: 80.00, description: "Cuadro oleo pintura original basado en paisaje.", category: "mix", img: "https://i.etsystatic.com/21187145/r/il/679224/3119116954/il_570xN.3119116954_rz3c.jpg" },
+    { id: 5, name: "Meditación", price: 25.00, description: "Arte basado en hombre meditando.", category: "figura", img: "https://images.joseartgallery.com/23242/conversions/landscape-painting-sunset-meditation-abstract-more-photo-thumb900.jpg" },
+    { id: 6, name: "Ibiza", price: 45.00, description: "Retrato de paisaje de la isla de Ibiza, España.", category: "oleo", img: "https://www.rubendeluis.com/wp-content/uploads/2019/02/Cuadro-al-oleo-de-Ibiza-desde-el-puerto.jpg" },
+    { id: 7, name: "Full Metal Alchemist", price: 55.00, description: "Cuadro oleo basado en el anime Full Metal Alchemist.", category: "oleo", img: "https://pm1.aminoapps.com/6525/6a23ea5e78d257a8333348f4964f261489c8f033_hq.jpg" },
+    { id: 8, name: "The Mistfits", price: 80.00, description: "Basado en el arte de la banda de Punk The Mistfits.", category: "oleo", img: "https://m.media-amazon.com/images/I/71+QtPzfQHL._AC_UF894,1000_QL80_.jpg" },
+    { id: 9, name: "Iron Maiden", price: 80.00, description: "Basado en el arte de la banda de Power Metal Iron Maiden.", category: "oleo", img: "https://http2.mlstatic.com/D_NQ_NP_719939-MLM74865170836_032024-O.webp" },
+    { id: 10, name: "SteamPunk", price: 150.00, description: "Cuadro oleo pintura original basado en arte SteamPunk.", category: "oleo", img: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQ-LTWscYJSBSJjRNQzQrJ7dKXT-B0j7gTV339NTv0jCMxYHs7-D7155Ov1saju5FWZPnXnNqQ8ZQdh0ILylk1IlEeKjLwN1gHYBJXAykoE0oSbOlg-gvAvMJO6YY4mC-Mc4dJYArqRiU/s1600/01-High+Society+News,+oil,40x55cm.jpg" }
 
 ];
 
-// look for products by ID productMap.get(id)
+// buscar products por ID productMap.get(id)
 const productMap = new Map(rawData.map(p => [p.id, p]));
 
 
 // MAP: Para el carrito. Clave: ID Producto, Valor: Cantidad.
-// Usamos Map porque es más eficiente para inserciones/búsquedas frecuentes por ID.
 const cart = new Map();
 
 // SET: Para favoritos.
-// Usamos Set porque no queremos productos duplicados en favoritos.
 const wishlist = new Set();
 
 const createNotifier = () => {
@@ -33,7 +30,6 @@ const createNotifier = () => {
         toastEl.textContent = message;
         toastEl.classList.add('toast--visible');
 
-        // Limpiamos timeout anterior si existe para evitar parpadeos
         if (timeoutId) clearTimeout(timeoutId);
 
         timeoutId = setTimeout(() => {
@@ -45,7 +41,7 @@ const createNotifier = () => {
 const notify = createNotifier(); // Instancia del closure
 
 
-// Simulamos una petición a una API que tarda 1.5 segundos.
+// Simulamos una petición a una API que tarda 1.0 segundos.
 
 const fetchProducts = () => {
     return new Promise((resolve, reject) => {
@@ -53,7 +49,7 @@ const fetchProducts = () => {
             // Simulamos éxito
             resolve(rawData);
             // Si quisieramos simular error: reject("Error de servidor");
-        }, 1500);
+        }, 1000);
     });
 };
 
@@ -63,7 +59,7 @@ const fetchProducts = () => {
  */
 async function initApp() {
     try {
-        // Tema 3: Async/Await
+
         const products = await fetchProducts();
 
         // Ocultar loader
@@ -88,10 +84,10 @@ async function initApp() {
 const renderCatalog = (productsList) => {
     const container = document.getElementById('catalog_art');
 
-    // Tema 3: Uso de .map() para generar un array de strings HTML
-    // Tema 2: Template Literals (``) para interpolar variables
+    // Uso de .map() para generar un array de strings HTML
+
     const cardsHtml = productsList.map(product => {
-        const isFav = wishlist.has(product.id); // Tema 2: Set.has()
+        const isFav = wishlist.has(product.id);
         return `
                     <article class="product">
                         <button class="product_fav-btn ${isFav ? 'product_fav-btn--active' : ''}" 
@@ -122,19 +118,19 @@ const renderCatalog = (productsList) => {
 // Configuración de Filtros
 
 const setupFilters = (allProducts) => {
-    const buttons = document.querySelectorAll('.filter-btn');
+    const buttons = document.querySelectorAll('.filter_btn');
 
     buttons.forEach(btn => {
         btn.addEventListener('click', (e) => {
             // Gestión de clases visuales
-            buttons.forEach(b => b.classList.remove('filter-btn--active'));
-            e.target.classList.add('filter-btn--active');
+            buttons.forEach(b => b.classList.remove('filter_btn--active'));
+            e.target.classList.add('filter_btn--active');
 
             const category = e.target.dataset.cat;
             console.log("category selected: " + category);
 
-            // Tema 3: Uso de .filter()
-            // Tema 2: Operador ternario
+            // Uso de .filter()
+
             const filtered = category === 'all'
                 ? allProducts
                 : allProducts.filter(p => p.category === category);
@@ -149,7 +145,7 @@ const setupFilters = (allProducts) => {
 * Lógica del Carrito (Uso de MAP)
 */
 const addToCart = (id) => {
-    // Tema 2: Map.get() y Map.set()
+    // Map.get() y Map.set()
     if (cart.has(id)) {
         cart.set(id, cart.get(id) + 1);
     } else {
@@ -160,7 +156,7 @@ const addToCart = (id) => {
 };
 
 const removeFromCart = (id) => {
-    cart.delete(id); // Tema 2: Map.delete()
+    cart.delete(id); // Map.delete()
     updateCartUI();
 };
 
@@ -174,7 +170,7 @@ const checkout = () => {
     // Simulación de proceso de compra
     notify("¡Gracias por tu pedido! La compra ha sido finalizada con éxito.");
 
-    // Vaciar el carrito (Tema 2: Map.clear())
+    // Vaciar el carrito (Map.clear())
     cart.clear();
 
     // Actualizar la interfaz (carrito vacío y cerrar modal)
@@ -188,7 +184,7 @@ const updateCartUI = () => {
     const badge = document.getElementById('badge-cart');
     const totalEl = document.getElementById('cart-total-price');
 
-    // Calcular cantidad total de items (Tema 2: Iteración sobre Map)
+    // Calcular cantidad total de items (Iteración sobre Map)
     let totalItems = 0;
     let totalPrice = 0;
 
@@ -199,7 +195,7 @@ const updateCartUI = () => {
         let html = '';
         // Iteramos sobre las entradas del Map [id, cantidad]
         for (const [id, qty] of cart) {
-            // Tema 3: .find() para buscar el objeto completo en el array original
+            //  .find() para buscar el objeto completo en el array original
             const product = rawData.find(p => p.id === id);
             totalItems += qty;
             totalPrice += (product.price * qty);
@@ -231,7 +227,7 @@ const updateCartUI = () => {
  * Lógica de Favoritos (Uso de SET)
  */
 const toggleWishlist = (id) => {
-    // Tema 2: Set.has(), Set.add(), Set.delete()
+    // Set.has(), Set.add(), Set.delete()
     if (wishlist.has(id)) {
         wishlist.delete(id);
         notify("Eliminado de favoritos");
@@ -250,7 +246,7 @@ const toggleWishlist = (id) => {
     // NOTA: En una app real, haríamos update selectivo del DOM, no un re-render total.
     // Para simplificar el ejemplo y reusar la función renderCatalog, lo hacemos así.
     // Necesitamos saber qué filtro está activo para no perder la vista actual.
-    const activeBtn = document.querySelector('.filter-btn--active');
+    const activeBtn = document.querySelector('.filter_btn--active');
     const category = activeBtn.dataset.cat;
     const filtered = category === 'all' ? rawData : rawData.filter(p => p.category === category);
     renderCatalog(filtered);
@@ -258,26 +254,26 @@ const toggleWishlist = (id) => {
 
 // UI Helpers
 const toggleCart = () => {
-    document.getElementById('cart-modal').classList.toggle('cart-modal--open');
+    document.getElementById('cart_modal').classList.toggle('cart_modal--open');
 };
 
 document.getElementById('btn-cart').addEventListener('click', toggleCart);
 
 document.getElementById('menu-toggle').addEventListener('click', () => {
-  const filters = document.getElementById('filters-menu');
-  filters.classList.toggle('show');
+    const filters = document.getElementById('filters-menu');
+    filters.classList.toggle('show');
 });
 
-function openProductModal(productId){
+function openProductModal(productId) {
     const product = productMap.get(productId);
-    console.log("id art selected"+ product);
+    console.log("id art selected" + product);
 
-     if (!product) return;
+    if (!product) return;
 
-  const modal = document.getElementById('product_modal');
-  const content = document.getElementById('modal_product_data');
+    const modal = document.getElementById('product_modal');
+    const content = document.getElementById('modal_product_data');
 
-      content.innerHTML = `
+    content.innerHTML = `
     <div style="text-align: center;">
       <img src="${product.img.trim()}" alt="${product.name}" 
            style="width: 100%; max-height: 300px; object-fit: contain; border-radius: 8px; margin-bottom: 16px;">
@@ -288,11 +284,11 @@ function openProductModal(productId){
       <p style="color: #555; margin: 12px 0;">${product.description}</p>
       
       <div style="margin-top: 20px; display: flex; flex-direction: column; gap: 12px;">
-        <button class="product_btn--primario" style="padding: 12px;" 
+        <button class="product_btn--primario product_btn" style="padding: 12px;" 
                 onclick="addToCart(${product.id}); closeProductModal();">
           Añadir al carrito
         </button>
-        <button class="product_btn--secundario" style="padding: 12px;" 
+        <button class="product_btn--secundario product_btn" style="padding: 12px;" 
                 onclick="checkout(); closeProductModal();">
           Comprar ahora
         </button>
@@ -300,14 +296,14 @@ function openProductModal(productId){
     </div>
   `;
 
-  modal.classList.remove('hidden');
-  document.body.style.overflow = 'hidden'; // prevent background scroll
+    modal.classList.remove('hidden');
+    document.body.style.overflow = 'hidden';
 
 }
 
 function closeProductModal() {
-  document.getElementById('product_modal').classList.add('hidden');
-  document.body.style.overflow = ''; // restore scroll
+    document.getElementById('product_modal').classList.add('hidden');
+    document.body.style.overflow = '';
 }
 
 // Arranque de la aplicación
