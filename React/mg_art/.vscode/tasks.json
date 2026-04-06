@@ -1,0 +1,10 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Crear estructura de carpetas para agentes",
+			"type": "shell",
+			"command": "mkdir -p src/components src/hooks src/services src/utils src/types src/context src/__tests__ src/pages src/styles src/data && echo 'Estructura de carpetas creada'"
+		}
+	]
+}

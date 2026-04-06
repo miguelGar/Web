@@ -1,0 +1,1 @@
+export type Category = 'Todos' | 'Oleo' | 'Acuarela' | 'Mix' | 'Figuras';

@@ -1,0 +1,41 @@
+/* Toast Notification Styles */
+.toast {
+  position: fixed;
+  bottom: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--color-primary, #2c1a12);
+  color: white;
+  padding: 1rem 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  max-width: 90%;
+  word-break: break-word;
+  transition: bottom 0.3s ease-in-out;
+}
+
+.toast--visible {
+  bottom: 2rem;
+}
+
+/* Toast tipo success (verde) */
+.toast[data-type="success"] {
+  background-color: #4caf50;
+}
+
+/* Toast tipo error (rojo) */
+.toast[data-type="error"] {
+  background-color: #f44336;
+}
+
+/* Toast tipo warning (amarillo) */
+.toast[data-type="warning"] {
+  background-color: #ff9800;
+  color: #333;
+}
+
+/* Toast tipo info (default) */
+.toast[data-type="info"] {
+  background-color: var(--color-primary, #2c1a12);
+}
